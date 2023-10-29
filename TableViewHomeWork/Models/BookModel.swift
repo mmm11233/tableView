@@ -7,23 +7,51 @@
 
 import UIKit
 
-class BookModel: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+class Book {
+    let name: String
+    let image: UIImage
+    
+    init(name: String, image: UIImage) {
+        self.name = name
+        self.image = image
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    static let dummyData = [
+        Book(
+            name: "Pride and Prejudice",
+            image: UIImage(named: "pride")!),
+        Book(
+            name: "Frankenstein",
+            image: UIImage(named: "frank")!),
+        Book(
+            name: "Orlando",
+            image: UIImage(named: "orlan")!),
+        Book(
+            name: "Narrative of the Life of Frederick Douglas",
+            image: UIImage(named: "frede")!),
+        Book(
+            name: "Jane Eyre",
+            image: UIImage(named: "jane")!),
+        Book(
+            name: "The Time Machine",
+            image: UIImage(named: "orlan")!),
+        Book(
+            name: "Women of the Harlem Renaissance",
+            image: UIImage(named: "frede")!),
+        Book(
+            name: "Orlando",
+            image: UIImage(named: "frede")!),
+        Book(
+            name: "Narrative of the Life of Frederick Douglas",
+            image: UIImage(named: "jane")!),
+        Book(
+            name: "Jane Eyre",
+            image: UIImage(named: "girWithWine")!),
+        Book(
+            name: "The Time Machine",
+            image: UIImage(named: "orlan")!),
+        Book(
+            name: "Women of the Harlem Renaissance",
+            image: UIImage(named: "orlan")!),
+    ]
 }
